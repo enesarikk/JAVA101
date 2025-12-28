@@ -19,6 +19,7 @@ public class Main {
                     System.out.println("Menu : \n 1-)Deposit Money \n 2-)Withdraw money \n 3-)Balance Inquiry \n 4-)Exit");
                     System.out.print("Select the action you wish to perform. : ");
                     select = input.nextInt();
+                    
                     switch (select) {
                         case 1 -> {
                             System.out.print("The amount you wish to deposit : ");
