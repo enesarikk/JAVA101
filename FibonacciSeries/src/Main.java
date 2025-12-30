@@ -7,13 +7,14 @@ public class Main {
         int number = value.nextInt();
 
         int counter = 0;
-        int a = 0, b = 1;
+        int n1 = 0, n2 = 1, n3;
+        System.out.print("Fibobacci Series : " + n1 + " " + n2);
 
-        while (counter < number) {
-            System.out.print( a+ ", ");
-            int temp = a + b;
-            a = b;
-            b = temp;
+        while (counter < (number - 2)) {
+            n3 = n1 + n2;
+            System.out.print(" " + n3);
+            n1 = n2;
+            n2 = n3;
             counter++;
         }
     }
